@@ -96,7 +96,7 @@ class ReflectionMethod implements Reflector
      * @since 8.0
      * @template TClass as object
      * @param class-string<TClass>|null $name
-     * @return array<ReflectionAttribute<TClass>>
+     * @return array<ReflectionAttribute<$name is null ? TClass : object>>
      */
     public function getAttributes(?string $name = null, int $flags = 0): array {}
 }
